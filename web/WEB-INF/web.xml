@@ -5,11 +5,20 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
            version="3.1">
     <servlet>
-        <servlet-name>Hello Servlets</servlet-name>
+        <servlet-name>Hello Servlet</servlet-name>
         <servlet-class>HelloWorldServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Form Servlet</servlet-name>
+        <servlet-class>FormServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
-        <servlet-name>Hello Servlets</servlet-name>
+        <servlet-name>Hello Servlet</servlet-name>
         <url-pattern>/servlets</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Form Servlet</servlet-name>
+        <url-pattern>/servlets/form</url-pattern>
     </servlet-mapping>
 </web-app>
